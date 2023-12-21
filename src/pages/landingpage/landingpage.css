@@ -21,3 +21,10 @@
   margin-right: 2rem;
   padding: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .header__right-profile img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 2rem;
+  }
+}
