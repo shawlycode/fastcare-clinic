@@ -15,11 +15,9 @@ const Login = () => {
 
 
     < form onSubmit={handleLogin}>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">User Name</label>
-        <input type="name" class="form-control" id="username" />
-
-      </div>
+      <h4>Login to Fastcare Clinic </h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ratione laboriosam aliquam assumenda consectetur minus natus provident
+        .</p>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
