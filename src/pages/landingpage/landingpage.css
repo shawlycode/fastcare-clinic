@@ -6,3 +6,11 @@
   /* align-items: center; */
   justify-content: center;
 }
+@media screen and (max-width: 600px) {
+  .landing__page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+}
