@@ -12,7 +12,7 @@ const LandingPage = () => {
 
   }
   return (
-    <div className="container">
+    <div className="container-1">
       <div className='landing__page'>
         <div className="left__container">
           <h1>Welcome to Fastcare clinic</h1>
