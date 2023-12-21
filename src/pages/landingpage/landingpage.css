@@ -1,9 +1,12 @@
+.container {
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
 .landing__page {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
-  padding: 2rem;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 600px) {
@@ -13,4 +16,8 @@
     flex-direction: column;
     padding: 3rem;
   }
+}
+.btn-warning {
+  margin-right: 2rem;
+  padding: 2rem;
 }
