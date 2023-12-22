@@ -2,6 +2,7 @@
 import './login.css'
 import { useNavigate } from 'react-router-dom';
 import floids from '../../login.png'
+import logo from '../../fcclogo.png'
 
 
 const Login = () => {
@@ -16,6 +17,9 @@ const Login = () => {
     <section>
       <div className="container ">
         <div className="form__container">
+          <div className="logo__container">
+            <img src={logo} alt="logo" className='logo' />
+          </div>
           < form onSubmit={handleLogin}>
             <h4>Sign up </h4>
             <p>

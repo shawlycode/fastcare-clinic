@@ -30,11 +30,21 @@ form {
   width: 87%;
   object-fit: cover;
 }
+.logo {
+  width: 200px;
+  margin-left: 3rem;
+}
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     width: 90%;
+  }
+  .logo {
+    width: 1005;
+    /* height: 120px; */
+    margin-left: 1rem;
+    object-fit: cover;
   }
 }
