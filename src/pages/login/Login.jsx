@@ -21,7 +21,7 @@ const Login = () => {
             <img src={logo} alt="logo" className='logo' />
           </div>
           < form onSubmit={handleLogin}>
-            <h4>Sign up </h4>
+            <h4>Sign in </h4>
             <p>
               Please note that you must be a registered user to get access to the FastCare Subscription system. Please contact systems administrator for your credentials
               .</p>
