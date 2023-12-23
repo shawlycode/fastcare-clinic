@@ -64,3 +64,8 @@ body {
   text-transform: capitalize;
   color: #feb703;
 }
+@media screen and (max-width: 600px) {
+  .logo img {
+    width: 120px;
+  }
+}
