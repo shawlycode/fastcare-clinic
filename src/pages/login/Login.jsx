@@ -1,7 +1,7 @@
 
 import './login.css'
 import { useNavigate } from 'react-router-dom';
-import floids from '../../assets/floids.gif'
+import gif from '../../assets/gif.gif'
 import logo from '../../assets/fcclogo.png'
 
 
@@ -39,7 +39,7 @@ const Login = () => {
           </ form>
         </div>
         <div className="form__right">
-          <img src={floids} alt="" />
+          <img src={gif} alt="" />
         </div>
       </div>
     </section>

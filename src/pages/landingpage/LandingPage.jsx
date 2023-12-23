@@ -1,6 +1,6 @@
 import './landingpage.css'
 import { useNavigate } from 'react-router-dom';
-import floids from '../../assets/floids.gif'
+import gif from '../../assets/gif.gif'
 import logo from '../../assets/fcclogo.png'
 
 const LandingPage = () => {
@@ -31,7 +31,7 @@ const LandingPage = () => {
           <div className="header__right-profile">
             {/* <video src={video} loop={Infinity} autoPlay={true} width="100%" controls={false}
             /> */}
-            <img src={floids} alt="" />
+            <img src={gif} alt="" />
 
           </div>
         </div>
