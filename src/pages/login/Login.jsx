@@ -1,15 +1,15 @@
 
 import './login.css'
 import { useNavigate } from 'react-router-dom';
-import floids from '../../login.png'
-import logo from '../../fcclogo.png'
+import floids from '../../assets/floids.gif'
+import logo from '../../assets/fcclogo.png'
 
 
 const Login = () => {
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault()
-    navigate('/')
+    navigate('/sidebar')
 
   }
   return (
@@ -35,7 +35,7 @@ const Login = () => {
               <input type="password" class="form-control" id="exampleInputPassword1" />
             </div>
 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Sign in</button>
           </ form>
         </div>
         <div className="form__right">

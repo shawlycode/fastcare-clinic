@@ -1,7 +1,7 @@
 import './landingpage.css'
 import { useNavigate } from 'react-router-dom';
-import floids from '../../floids.gif'
-import logo from '../../fcclogo.png'
+import floids from '../../assets/floids.gif'
+import logo from '../../assets/fcclogo.png'
 
 const LandingPage = () => {
 
