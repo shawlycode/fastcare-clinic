@@ -1,21 +1,68 @@
+import React, { useState } from 'react';
 import './sidebar.css'
-import logo from '../../assets/fcclogo.png'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { FaLock, FaLockOpen } from "react-icons/fa6";
+import { SidebarData } from './SidebarData';
+import SubMenu from './SubMenu';
+import { IconContext } from 'react-icons/lib';
 
+const Nav = styled.div`
+ 
+`;
 
+const NavIcon = styled(Link)`
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
 
-import { SidebarData } from './SidebarData'
+const SidebarNav = styled.nav`
+  background: #15171c;
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  transition: 350ms;
+  z-index: 10;
+`;
+
+const div = styled.div`
+  width: 100%;
+`;
+
 const Sidebar = () => {
-  return (
-    <main className='sidebar__main'>
-      <div className="sidebar__container">
-        <div className="logo"><img src={logo} alt="" /></div>
-        <div className="sidebar__content">
-          {SidebarData.map(item => <div className='sidebar__items'><ul key={item.id}> <div className='icon'>{item.icon}</div><a href={item.link}>{item.title}</a></ul></div>)}
-        </div>
-        <div className="logo"> <h3>footer</h3></div>
-      </div>
-    </main>
-  )
-}
+  const [sidebar, setSidebar] = useState(false);
 
-export default Sidebar
+  const showSidebar = () => setSidebar(!sidebar);
+
+  return (
+    <>
+      <IconContext.Provider value={{ color: "#ffc300" }}>
+        <div>
+          <NavIcon to='#'>
+            <FaLock onClick={showSidebar} />
+          </NavIcon>
+        </div>
+        <SidebarNav sidebar={sidebar}>
+          <div className='sidebar__wrapper'>
+            <NavIcon to='#'>
+              <FaLockOpen onClick={showSidebar} />
+            </NavIcon>
+            {SidebarData.map((item, index) => {
+              return <SubMenu item={item} key={index} />;
+            })}
+          </div>
+        </SidebarNav>
+      </IconContext.Provider>
+    </>
+  );
+};
+
+export default Sidebar;
