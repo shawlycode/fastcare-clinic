@@ -2,7 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   font-size: 0.9rem;
-  color: #000000;
+  color: #001d3d;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -14,4 +14,6 @@ body::-webkit-scrollbar {
   text-decoration: none;
   list-style: none;
   outline: none;
+  color: #ffc300;
+  font-size: 14px;
 }

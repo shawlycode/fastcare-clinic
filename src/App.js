@@ -1,22 +1,25 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/home/Home";
-import LandingPage from "./pages/landingpage/LandingPage";
-import Contact from "./pages/contact/Contact";
-import Login from "./pages/login/Login";
-import Sidebar from "./components/sidebar/Sidebar";
+
+import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Overview from './pages/sidebar/Overview';
+import { Reports, ReportsOne, ReportsTwo, ReportsThree } from './pages/sidebar/Reports';
+import Team from './pages/sidebar/Team';
+
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <Sidebar />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/sidebar" element={<Sidebar />} />
+          <Route path='/overview' exact component={Overview} />
+          <Route path='/reports' exact component={Reports} />
+          <Route path='/reports/reports1' exact component={ReportsOne} />
+          <Route path='/reports/reports2' exact component={ReportsTwo} />
+          <Route path='/reports/reports3' exact component={ReportsThree} />
+          <Route path='/team' exact component={Team} />
         </Routes>
-
       </BrowserRouter>
     </>
   )
