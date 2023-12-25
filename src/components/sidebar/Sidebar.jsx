@@ -6,6 +6,11 @@ import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
+import { RiAccountPinCircleLine } from "react-icons/ri";
+
+
+
+
 
 const Nav = styled.div`
  
@@ -45,10 +50,14 @@ const Sidebar = () => {
   return (
     <>
       <IconContext.Provider value={{ color: "#ffc300" }}>
-        <div>
-          <NavIcon to='#'>
+        <div className='icon__container'>
+          <NavIcon to='#' >
             <FaLock onClick={showSidebar} />
           </NavIcon>
+          <div className="profile__container">
+            <p>Good morning , Orlando </p>
+            <RiAccountPinCircleLine className='icon__profile' />
+          </div>
         </div>
         <SidebarNav sidebar={sidebar}>
           <div className='sidebar__wrapper'>

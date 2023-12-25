@@ -16,3 +16,23 @@
   transition: 350ms;
   z-index: 10;
 }
+.icon__container {
+  background-color: #15171c;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+.profile__container {
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.profile__container p {
+  padding-top: 1rem;
+}
+.icon__profile {
+  font-size: 26px;
+  cursor: pointer;
+}

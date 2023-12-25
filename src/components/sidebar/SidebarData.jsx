@@ -1,18 +1,15 @@
-
-import { AiFillDashboard } from "react-icons/ai";
-import { FaUserDoctor, FaChartPie } from "react-icons/fa6";
-import { MdOutlineArrowDropDown, MdPayment } from "react-icons/md"
-import { IoMdArrowDropup } from "react-icons/io";
-import { FaCcMastercard } from "react-icons/fa";
-import { FaUserTie, FaUserCog } from "react-icons/fa";
-import { TbPasswordUser } from "react-icons/tb";
-import { IoGift } from "react-icons/io5";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { BsCashCoin } from "react-icons/bs";
-import { LuLineChart } from "react-icons/lu";
-import { FaUsersViewfinder } from "react-icons/fa6";
-
-
+import { AiFillDashboard } from 'react-icons/ai';
+import { FaUserDoctor, FaChartPie } from 'react-icons/fa6';
+import { MdOutlineArrowDropDown, MdPayment } from 'react-icons/md';
+import { IoMdArrowDropup } from 'react-icons/io';
+import { FaCcMastercard } from 'react-icons/fa';
+import { FaUserTie, FaUserCog } from 'react-icons/fa';
+import { TbPasswordUser } from 'react-icons/tb';
+import { IoGift } from 'react-icons/io5';
+import { RiCustomerService2Fill } from 'react-icons/ri';
+import { BsCashCoin } from 'react-icons/bs';
+import { LuLineChart } from 'react-icons/lu';
+import { FaUsersViewfinder } from 'react-icons/fa6';
 
 export const SidebarData = [
   {
@@ -33,19 +30,19 @@ export const SidebarData = [
       {
         title: 'Staff',
         path: '/staff/users/staff',
-        icon: <FaUserTie />
+        icon: <FaUserTie />,
       },
       {
         title: 'User Account',
         path: '/staff/users/user/account',
-        icon: <FaUserCog />
+        icon: <FaUserCog />,
       },
       {
         title: 'Reset Password',
         path: '/staff/users/user/resetpw',
         icon: <TbPasswordUser />,
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'Subscription',
@@ -58,22 +55,21 @@ export const SidebarData = [
         title: 'Individuals Subscriptions',
         path: '/subscription/individuals',
         icon: <FaCcMastercard />,
-        cName: 'sub-nav'
+        cName: 'sub-nav',
       },
       {
         title: 'Individuals & Groups',
         path: '/subscriptions/groups',
         // icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav'
+        cName: 'sub-nav',
       },
     ],
-
   },
 
   {
     title: 'Payments',
     path: '/payments',
-    icon: < MdPayment />,
+    icon: <MdPayment />,
     iconClosed: <MdOutlineArrowDropDown />,
     iconOpened: <IoMdArrowDropup />,
 
@@ -92,8 +88,8 @@ export const SidebarData = [
         title: 'Payments Confirmation',
         path: '/payments/payments/confirmation',
         // icon: <IoIcons.IoIosPaper />
-      }
-    ]
+      },
+    ],
   },
   {
     title: 'Customer Care Center',
@@ -108,8 +104,7 @@ export const SidebarData = [
         path: '/payments/view/payments',
         // icon: <IoIcons.IoIosPaper />
       },
-
-    ]
+    ],
   },
   {
     title: 'Auto-Debit OPS',
@@ -128,8 +123,7 @@ export const SidebarData = [
         path: '/autodebits/unmandated/subs',
         // icon: <IoIcons.IoIosPaper />
       },
-
-    ]
+    ],
   },
   {
     title: 'Reports & Analysis',
@@ -141,7 +135,7 @@ export const SidebarData = [
       {
         title: 'Subscribers View',
         path: '/subscribers',
-        icon: <FaUsersViewfinder />
+        icon: <FaUsersViewfinder />,
       },
       {
         title: 'Facility Performance',
@@ -158,8 +152,7 @@ export const SidebarData = [
         path: '/reports/facility/performance',
         // icon: <IoIcons.IoIosPaper />
       },
-
-    ]
+    ],
   },
   {
     title: 'Settings',
@@ -171,7 +164,7 @@ export const SidebarData = [
       {
         title: 'Facility Setup',
         path: '/setting/facility/setup',
-        icon: <FaUsersViewfinder />
+        icon: <FaUsersViewfinder />,
       },
       {
         title: 'Facility Performance',
@@ -193,13 +186,13 @@ export const SidebarData = [
         path: '/setting/groups/associations',
         // icon: <IoIcons.IoIosPaper />
       },
-    ]
+    ],
   },
   {
     title: 'Charts',
     path: '/charts',
-    icon: < FaChartPie />,
+    icon: <FaChartPie />,
     iconClosed: <MdOutlineArrowDropDown />,
     iconOpened: <IoMdArrowDropup />,
-  }
+  },
 ];
