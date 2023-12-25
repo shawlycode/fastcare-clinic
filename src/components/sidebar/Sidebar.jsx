@@ -12,9 +12,9 @@ import { RiAccountPinCircleLine } from "react-icons/ri";
 
 
 
-const Nav = styled.div`
- 
-`;
+// const Nav = styled.div`
+
+// `;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
@@ -38,9 +38,9 @@ const SidebarNav = styled.nav`
   z-index: 10;
 `;
 
-const div = styled.div`
-  width: 100%;
-`;
+// const div = styled.div`
+//   width: 100%;
+// `;
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -55,7 +55,7 @@ const Sidebar = () => {
             <FaLock onClick={showSidebar} />
           </NavIcon>
           <div className="profile__container">
-            <p>Good morning , Orlando </p>
+            <p className='text'>Good morning , Orlando </p>
             <RiAccountPinCircleLine className='icon__profile' />
           </div>
         </div>

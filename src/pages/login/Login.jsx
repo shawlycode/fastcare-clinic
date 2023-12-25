@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault()
-    navigate('/sidebar')
+    navigate('/Sidebar')
 
   }
   return (
