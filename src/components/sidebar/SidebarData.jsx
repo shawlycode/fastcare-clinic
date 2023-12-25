@@ -1,6 +1,6 @@
 
 import { AiFillDashboard } from "react-icons/ai";
-import { FaUserDoctor } from "react-icons/fa6";
+import { FaUserDoctor, FaChartPie } from "react-icons/fa6";
 import { MdOutlineArrowDropDown, MdPayment } from "react-icons/md"
 import { IoMdArrowDropup } from "react-icons/io";
 import { FaCcMastercard } from "react-icons/fa";
@@ -11,6 +11,9 @@ import { RiCustomerService2Fill } from "react-icons/ri";
 import { BsCashCoin } from "react-icons/bs";
 import { LuLineChart } from "react-icons/lu";
 import { FaUsersViewfinder } from "react-icons/fa6";
+
+
+
 export const SidebarData = [
   {
     title: 'Dashboard',
@@ -63,38 +66,10 @@ export const SidebarData = [
         // icon: <IoIcons.IoIosPaper />,
         cName: 'sub-nav'
       },
-
-      {
-        title: 'Staff & Users ',
-        path: '/staff/users',
-        icon: <FaUserDoctor />,
-        iconClosed: <MdOutlineArrowDropDown />,
-        iconOpened: <IoMdArrowDropup />,
-        subNav: [
-          {
-            title: 'Family Subscriptions',
-            path: '/subscription/family',
-            // icon: <IoIcons.IoIosPaper />,
-            cName: 'sub-nav'
-          },
-          {
-            title: 'Family Plan Members',
-            path: '/subscription/family/plan',
-            // icon: <IoIcons.IoIosPaper />,
-            cName: 'sub-nav'
-          },
-          {
-            title: 'View Family Subs',
-            path: '/subscription/family/viewsubs',
-            // icon: <IoIcons.IoIosPaper />,
-            cName: 'sub-nav'
-          },
-        ]
-
-      }
     ],
 
   },
+
   {
     title: 'Payments',
     path: '/payments',
@@ -169,11 +144,62 @@ export const SidebarData = [
         icon: <FaUsersViewfinder />
       },
       {
-        title: 'UnMandated Subscribers',
-        path: '/autodebits/unmandated/subs',
+        title: 'Facility Performance',
+        path: '/reports/facility/performance',
+        // icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Staff Collection Performance',
+        path: '/reports/facility/performance',
+        // icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Agents Commission List',
+        path: '/reports/facility/performance',
         // icon: <IoIcons.IoIosPaper />
       },
 
     ]
+  },
+  {
+    title: 'Settings',
+    path: '/settings',
+    icon: <LuLineChart />,
+    iconClosed: <MdOutlineArrowDropDown />,
+    iconOpened: <IoMdArrowDropup />,
+    subNav: [
+      {
+        title: 'Facility Setup',
+        path: '/setting/facility/setup',
+        icon: <FaUsersViewfinder />
+      },
+      {
+        title: 'Facility Performance',
+        path: '/reports/facility/performance',
+        // icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Package Setup',
+        path: '/setting/package/setup',
+        // icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Call Comment Category',
+        path: '/settings/call/comments',
+        // icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Groups & Associations',
+        path: '/setting/groups/associations',
+        // icon: <IoIcons.IoIosPaper />
+      },
+    ]
+  },
+  {
+    title: 'Charts',
+    path: '/charts',
+    icon: < FaChartPie />,
+    iconClosed: <MdOutlineArrowDropDown />,
+    iconOpened: <IoMdArrowDropup />,
   }
 ];

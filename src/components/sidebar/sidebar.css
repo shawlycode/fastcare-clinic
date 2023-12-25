@@ -5,3 +5,14 @@
   justify-content: flex-start;
   align-items: center;
 }
+.sidebar {
+  background: #15171c;
+  width: 240px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transition: 350ms;
+  z-index: 10;
+}
