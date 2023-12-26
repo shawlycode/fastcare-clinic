@@ -4,13 +4,7 @@ import { FaUserTie } from 'react-icons/fa';
 import { PiGearSix } from 'react-icons/pi';
 import { RiLogoutCircleLine } from 'react-icons/ri';
 
-// const data = [
-//   {
-//     title: 'Profile',
-//     path: './profile',
-//     icon: <FaUserTie />
-//   },
-// ]
+
 const Logout = () => {
 
   const navigate = useNavigate();
