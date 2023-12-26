@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import gif from '../../assets/gif.gif'
 import logo from '../../assets/fcclogo.png'
 
+
 const LandingPage = () => {
-
-
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault()
@@ -39,5 +38,4 @@ const LandingPage = () => {
     </div>
   )
 }
-
-export default LandingPage
+export default LandingPage;

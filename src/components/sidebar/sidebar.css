@@ -29,8 +29,9 @@
   align-items: center;
   justify-content: center;
 }
-.profile__container .text p {
-  padding-top: 1rem;
+.profile__container .text {
+  padding-top: 1.4rem;
+  color: aliceblue;
 }
 .icon__profile {
   font-size: 26px;
