@@ -1,12 +1,12 @@
 .wrapper div {
-  background: #15171c;
+  background: #023e8a;
   height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .sidebar {
-  background: #15171c;
+  background-color: #023e8a;
   width: 240px;
   height: 100vh;
   display: flex;
@@ -17,10 +17,13 @@
   z-index: 10;
 }
 .icon__container {
-  background-color: #15171c;
+  background-color: #023e8a;
   display: flex;
   justify-content: space-between;
   height: 60px;
+}
+.icon-nav {
+  color: #fff;
 }
 .profile__container {
   display: flex;
@@ -36,4 +39,5 @@
 .icon__profile {
   font-size: 26px;
   cursor: pointer;
+  color: aliceblue;
 }

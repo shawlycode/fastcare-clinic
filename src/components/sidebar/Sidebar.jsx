@@ -26,7 +26,7 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background: #023e8a;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -49,10 +49,10 @@ const Sidebar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#ffc300" }}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <div className='icon__container'>
           <NavIcon to='#' >
-            <FaLock onClick={showSidebar} />
+            <FaLock onClick={showSidebar} className='icon-nav' />
           </NavIcon>
           <div className="profile__container">
             <p className='text'>Good morning , Orlando </p>

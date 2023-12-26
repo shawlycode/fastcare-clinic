@@ -11,6 +11,7 @@ import { BsCashCoin } from 'react-icons/bs';
 import { LuLineChart } from 'react-icons/lu';
 import { FaUsersViewfinder } from 'react-icons/fa6';
 
+
 export const SidebarData = [
   {
     title: 'Dashboard',
@@ -39,7 +40,7 @@ export const SidebarData = [
       },
       {
         title: 'Reset Password',
-        path: '/staff/users/user/resetpw',
+        path: '/staff/',
         icon: <TbPasswordUser />,
       },
     ],
@@ -53,7 +54,7 @@ export const SidebarData = [
     subNav: [
       {
         title: 'Individuals Subscriptions',
-        path: '/subscription/individuals',
+        path: '/subscription',
         icon: <FaCcMastercard />,
         cName: 'sub-nav',
       },
