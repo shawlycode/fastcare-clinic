@@ -7,7 +7,7 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import { RiAccountPinCircleLine } from "react-icons/ri";
-
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -43,6 +43,14 @@ const SidebarNav = styled.nav`
 // `;
 
 const Sidebar = () => {
+
+  const navigate = useNavigate();
+  const handleLogOut = (e) => {
+    e.preventDefault()
+    navigate('/')
+
+
+  }
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -56,7 +64,7 @@ const Sidebar = () => {
           </NavIcon>
           <div className="profile__container">
             <p className='text'>Good morning , Orlando </p>
-            <RiAccountPinCircleLine className='icon__profile' />
+            <RiAccountPinCircleLine className='icon__profile' onClick={handleLogOut} />
           </div>
         </div>
         <SidebarNav sidebar={sidebar}>
