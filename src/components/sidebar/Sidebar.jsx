@@ -73,7 +73,7 @@ const Sidebar = () => {
           <div className="profile__container">
             <p className='text'>Good morning , Orlando </p>
             <div className="logout">
-              <FaUserMd className='icon__profile' onClick={handleLogOut} />
+
               <Logout />
             </div>
           </div>

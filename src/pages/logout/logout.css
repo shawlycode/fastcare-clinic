@@ -1,7 +1,9 @@
 .dropdown-toggle {
   color: #ffff;
-  font-size: 21px;
-  background-color: red;
+  font-size: 22px;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
 }
 .dropdown ul {
   background: #023e8a;

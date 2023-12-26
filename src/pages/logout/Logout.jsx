@@ -20,7 +20,7 @@ const Logout = () => {
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
-      ></div>
+      ><FaUserTie /></div>
       <div class="dropdown-menu">
         <div className="logout__container">
           <div className="logout__items">
