@@ -33,11 +33,17 @@
   justify-content: center;
 }
 .profile__container .text {
-  padding-top: 1.4rem;
+  padding-top: 1rem;
   color: aliceblue;
 }
 .icon__profile {
-  font-size: 26px;
+  font-size: 20px;
+  padding-top: 5px;
   cursor: pointer;
   color: aliceblue;
+}
+
+.logout {
+  display: flex;
+  gap: 0.2rem;
 }

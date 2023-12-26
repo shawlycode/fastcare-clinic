@@ -6,8 +6,9 @@ import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
-import { RiAccountPinCircleLine } from "react-icons/ri";
+import { FaUserMd } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import Logout from '../../pages/logout/Logout';
 
 
 
@@ -43,11 +44,18 @@ const SidebarNav = styled.nav`
 // `;
 
 const Sidebar = () => {
+  // const LogoutPanel = () => {
+  //   return (
+  //     <div className='logoutPanel'>
+  //       <p>Logout</p>
+  //     </div>
+  //   )
+  // }
 
   const navigate = useNavigate();
   const handleLogOut = (e) => {
     e.preventDefault()
-    navigate('/')
+    navigate({})
 
 
   }
@@ -64,7 +72,10 @@ const Sidebar = () => {
           </NavIcon>
           <div className="profile__container">
             <p className='text'>Good morning , Orlando </p>
-            <RiAccountPinCircleLine className='icon__profile' onClick={handleLogOut} />
+            <div className="logout">
+              <FaUserMd className='icon__profile' onClick={handleLogOut} />
+              <Logout />
+            </div>
           </div>
         </div>
         <SidebarNav sidebar={sidebar}>
