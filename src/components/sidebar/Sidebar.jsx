@@ -46,8 +46,6 @@ const Sidebar = ({ children }) => {
 
   return (
     <>
-
-
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className='icon__container' >
           {/* {islogedin ? <Sidebar /> : null} */}
@@ -61,7 +59,6 @@ const Sidebar = ({ children }) => {
             </div>
           </div>
         </div>
-
         <SidebarNav sidebar={sidebar} className='sidebar'>
           <div className='logo'><img src={logo} alt="" /></div>
           <div className='sidebar__wrapper'>
