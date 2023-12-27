@@ -37,7 +37,7 @@ const DropdownLink = styled(Link)`
   padding-top:0;
   margin:0;
   &:hover {
-    background: #ffff;
+    background: transparent;
     cursor: pointer;
   }
 `;
