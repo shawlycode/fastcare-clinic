@@ -59,7 +59,7 @@ const Sidebar = ({ children }) => {
           </div>
         </div>
         <SidebarNav sidebar={sidebar} className='sidebar'>
-          <div className='logo'><img src={logo} alt="" /></div>
+          <div className='logo__nav'><img src={logo} alt="" /></div>
           <div className='sidebar__wrapper'>
             <NavIcon to='#'>
               <FaLockOpen onClick={showSidebar} />

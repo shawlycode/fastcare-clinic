@@ -1,14 +1,13 @@
-import { useState } from 'react'
+
 import './landingpage.css'
 import { useNavigate } from 'react-router-dom';
 import gif from '../../assets/gif.gif'
 import logo from '../../assets/fcclogo.png'
-// import Sidebar from '../../components/sidebar/Sidebar';
+
 
 
 const LandingPage = () => {
 
-  // const [islogedin, setIslogedin] = useState(false);
 
   const navigate = useNavigate();
   const handleLogin = (e) => {
@@ -39,7 +38,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* {islogedin ? setIslogedin : null} */}
+
     </div >
   )
 }
