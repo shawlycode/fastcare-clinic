@@ -1,4 +1,4 @@
-import React, { Children, useState } from 'react';
+import React, { useState } from 'react';
 import '../../components/sidebar/sidebar.css'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -35,7 +35,7 @@ const SidebarNav = styled.nav`
 
 const Sidebar = ({ children }) => {
 
-
+  // const [islogedin, setIslogedin] = useState(false)
 
 
   const [sidebar, setSidebar] = useState(false);
@@ -44,8 +44,11 @@ const Sidebar = ({ children }) => {
 
   return (
     <>
+
+
       <IconContext.Provider value={{ color: "#fff" }}>
-        <div className='icon__container'>
+        <div className='icon__container' >
+          {/* {islogedin ? <Sidebar /> : null} */}
           <NavIcon to='#' >
             <FaLock onClick={showSidebar} className='icon-nav' />
           </NavIcon>
@@ -67,7 +70,7 @@ const Sidebar = ({ children }) => {
             })}
           </div>
         </SidebarNav>
-        <div className='hello'>{children}</div>
+        <div >{children}</div>
       </IconContext.Provider>
     </>
   );

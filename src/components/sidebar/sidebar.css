@@ -15,7 +15,7 @@
   top: 0;
   transition: 0.45ms;
   z-index: 10;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 .icon__container {
   background-color: #023e8a;

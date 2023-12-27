@@ -1,10 +1,15 @@
+import { useState } from 'react'
 import './landingpage.css'
 import { useNavigate } from 'react-router-dom';
 import gif from '../../assets/gif.gif'
 import logo from '../../assets/fcclogo.png'
+// import Sidebar from '../../components/sidebar/Sidebar';
 
 
 const LandingPage = () => {
+
+  // const [islogedin, setIslogedin] = useState(false);
+
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault()
@@ -12,6 +17,7 @@ const LandingPage = () => {
 
   }
   return (
+
     <div className="container-1">
       <div className="logo__container">
         <img src={logo} alt="logo" className='logo' />
@@ -21,21 +27,20 @@ const LandingPage = () => {
           <h3>Welcome to Fastcare clinic</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet a sunt in deserunt rerum nemo porro est et ab tenetur, aliquid quibusdam doloremque consequuntur voluptatem, placeat, modi suscipit ad laboriosam.
             Quibusdam ipsa vel officia quas facere </p>
-          <div className="btn__container">
-            <button type="button" class="btn btn-warning" onClick={handleLogin}>Login</button>
 
+          <div className="btn__container">
+
+            <button type="button" class="btn btn-warning" onClick={handleLogin}>Login</button>
           </div>
         </div>
         <div className="right__container">
           <div className="header__right-profile">
-            {/* <video src={video} loop={Infinity} autoPlay={true} width="100%" controls={false}
-            /> */}
             <img src={gif} alt="" />
-
           </div>
         </div>
       </div>
-    </div>
+      {/* {islogedin ? setIslogedin : null} */}
+    </div >
   )
 }
 export default LandingPage;
