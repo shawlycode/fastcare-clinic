@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
-import './sidebar.css'
+import React, { Children, useState } from 'react';
+import '../../components/sidebar/sidebar.css'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaLock, FaLockOpen } from "react-icons/fa6";
 import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
-import { FaUserMd } from "react-icons/fa";
-import { useNavigate } from 'react-router-dom';
 import Logout from '../../pages/logout/Logout';
 
 
-
-
-// const Nav = styled.div`
-
-// `;
-
 const NavIcon = styled(Link)`
+
   margin-left: 2rem;
   font-size: 1.1rem;
   height: 60px;
@@ -39,26 +32,12 @@ const SidebarNav = styled.nav`
   z-index: 10;
 `;
 
-// const div = styled.div`
-//   width: 100%;
-// `;
 
-const Sidebar = () => {
-  // const LogoutPanel = () => {
-  //   return (
-  //     <div className='logoutPanel'>
-  //       <p>Logout</p>
-  //     </div>
-  //   )
-  // }
-
-  const navigate = useNavigate();
-  const handleLogOut = (e) => {
-    e.preventDefault()
-    navigate({})
+const Sidebar = ({ children }) => {
 
 
-  }
+
+
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -73,12 +52,12 @@ const Sidebar = () => {
           <div className="profile__container">
             <p className='text'>Good morning , Orlando </p>
             <div className="logout">
-
               <Logout />
             </div>
           </div>
         </div>
-        <SidebarNav sidebar={sidebar}>
+
+        <SidebarNav sidebar={sidebar} className='sidebar'>
           <div className='sidebar__wrapper'>
             <NavIcon to='#'>
               <FaLockOpen onClick={showSidebar} />
@@ -88,6 +67,7 @@ const Sidebar = () => {
             })}
           </div>
         </SidebarNav>
+        <div className='hello'>{children}</div>
       </IconContext.Provider>
     </>
   );

@@ -13,14 +13,17 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  transition: 350ms;
+  transition: 0.45ms;
   z-index: 10;
+  padding-bottom: 3rem;
 }
 .icon__container {
   background-color: #023e8a;
   display: flex;
   justify-content: space-between;
   height: 60px;
+  width: 100vw;
+  position: fixed;
 }
 .icon-nav {
   color: #fff;
@@ -46,4 +49,8 @@
 .logout {
   display: flex;
   gap: 0.2rem;
+}
+.hello {
+  padding-top: 4rem;
+  padding-left: 13rem;
 }

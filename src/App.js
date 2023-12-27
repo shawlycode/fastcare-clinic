@@ -1,20 +1,31 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import './App.css'
+import { Route, Routes } from "react-router-dom"
 import Login from "./pages/login/Login"
 import LandingPage from './pages/landingpage/LandingPage'
 import Sidebar from './components/sidebar/Sidebar'
-import Dashboard from "./pages/dashboard/Dashboard"
+import Dashboard from "./pages/sidebarPages/Dashboard"
+import { Staff, StaffAndUsers, UserAccount, ResetPassWord } from './pages/sidebarPages/StaffAndUsers'
+
+
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/sidebar" element={<Sidebar />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+    <>
+      {/* <Sidebar /> */}
+      <Sidebar>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="/sidebar" element={<Sidebar />} /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/staff-users" element={<StaffAndUsers />} />
+          <Route path="/staff-users/staff" element={<Staff />} />
+          <Route path="/staff-users/account" element={<UserAccount />} />
+          <Route path="/staff-users/reset-password" element={<ResetPassWord />} />
 
-      </Routes>
-    </BrowserRouter>
 
+        </Routes>
+      </Sidebar>
+    </>
   )
 }
 
