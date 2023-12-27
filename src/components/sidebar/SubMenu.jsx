@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-
-
 const SidebarLink = styled(Link)`
   display: flex;
   color: #feeafa;
@@ -34,8 +32,7 @@ const DropdownLink = styled(Link)`
   text-decoration: none;
   color: #ffff;
   font-size: 16px;
-  padding-top:0;
-  margin:0;
+  margin: 0;
   &:hover {
     background: transparent;
     cursor: pointer;
@@ -43,7 +40,6 @@ const DropdownLink = styled(Link)`
 `;
 
 const SubMenu = ({ item }) => {
-
   const [subnav, setSubnav] = useState(false);
 
   const showSubnav = () => setSubnav(!subnav);

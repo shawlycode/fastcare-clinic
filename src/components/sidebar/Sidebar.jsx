@@ -7,7 +7,8 @@ import { SidebarData } from './SidebarData';
 import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import Logout from '../../pages/logout/Logout';
-
+import './sidebar.css'
+import logo from '../../assets/fcclogo.png'
 
 const NavIcon = styled(Link)`
 
@@ -26,6 +27,7 @@ const SidebarNav = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
+  padding-top:30px;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
   transition: 350ms;
@@ -61,6 +63,7 @@ const Sidebar = ({ children }) => {
         </div>
 
         <SidebarNav sidebar={sidebar} className='sidebar'>
+          <div className='logo'><img src={logo} alt="" /></div>
           <div className='sidebar__wrapper'>
             <NavIcon to='#'>
               <FaLockOpen onClick={showSidebar} />

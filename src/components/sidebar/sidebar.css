@@ -15,7 +15,6 @@
   top: 0;
   transition: 0.45ms;
   z-index: 10;
-  /* padding-bottom: 3rem; */
 }
 .icon__container {
   background-color: #012047;
@@ -44,7 +43,7 @@
   font-size: 20px;
   padding-top: 5px;
   cursor: pointer;
-  color: aliceblue;
+  color: rgb(255, 244, 240);
 }
 
 .logout {
@@ -52,6 +51,17 @@
   gap: 0.2rem;
 }
 .hello {
-  padding-top: 4rem;
-  padding-left: 13rem;
+  /* padding-top: 4rem;
+  padding-left: 13rem; */
+}
+.logo {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  padding: 1rem;
+}
+.logo img {
+  width: 80px;
 }
