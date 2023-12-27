@@ -37,7 +37,6 @@ const SidebarNav = styled.nav`
 
 const Sidebar = ({ children }) => {
 
-  // const [islogedin, setIslogedin] = useState(false)
 
 
   const [sidebar, setSidebar] = useState(false);
@@ -48,7 +47,7 @@ const Sidebar = ({ children }) => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className='icon__container' >
-          {/* {islogedin ? <Sidebar /> : null} */}
+
           <NavIcon to='#' >
             <FaLock onClick={showSidebar} className='icon-nav' />
           </NavIcon>
